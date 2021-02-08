@@ -31,8 +31,8 @@ function traiteMouseMove(evt){
 
     var rect = canvas.getBoundingClientRect();
 
-    mousePos.x = evt.clientX - rect.left;
-        mousePos.y = evt.clientY - rect.top;
+    mousePos.x = evt.clientX - rect.left - 25;
+        mousePos.y = evt.clientY - rect.top - 25;
         
         
         hero.setPos(mousePos.x, mousePos.y);
