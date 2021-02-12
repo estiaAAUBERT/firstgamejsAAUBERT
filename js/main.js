@@ -1,6 +1,6 @@
 window.onload = main;
 
-let highscore = 0;
+let highscore;
 let canvas;
 let ctx;
 let score;
@@ -173,6 +173,14 @@ function main(){
 }
 
 function startGame(assetsLoaded){
+   
+    if(localStorage.getItem("highscore") == null){
+       highscore = 0    
+    }
+    else{
+        highscore =JSON.parse(localStorage.getItem("highscore"));
+    }
+    
     console.log('page chargée');
     // on récupére grâce à la Selector API
 
@@ -238,7 +246,7 @@ function spawnEnemies(){
 function HighscoreStorage(){
     if(score >= highscore){
         highscore = score;
-        //localStorage.setItem("highscore", JSON.stringify(highscore));
+        localStorage.setItem("highscore", JSON.stringify(highscore));
     };
 
 }
