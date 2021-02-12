@@ -56,7 +56,7 @@ function afficherRules(){
 
     ctx.beginPath();
     ctx.fillStyle= "#ffffff";
-    ctx.arc(300, 530, hero.rayonhero, 0, 2 * Math.PI);
+    ctx.arc(300, 530, 25, 0, 2 * Math.PI);
     ctx.fill();
 
     ctx.beginPath();
