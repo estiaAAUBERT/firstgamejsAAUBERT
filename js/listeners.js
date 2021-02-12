@@ -56,6 +56,7 @@ function traiteMouseDown(event) {
         MPAnimation(25);
         changeMusique(assets.buildingtension);
         score = 0;
+        hero.rayonhero = 25;
     }
    
   }
