@@ -10,7 +10,7 @@ function afficherMenuPrincipal(){
     ctx.textAlign = "center";
     ctx.fillText("Click anywhere",300,550);
     ctx.fillStyle = 'gold';
-    //ctx.fillText("High Score : " + highscore.toString(),300,450);
+    ctx.fillText("High Score : " + highscore.toString(),300,450);
     ctx.strokeStyle = 'gold';
     ctx.fillStyle = 'gold';
     ctx.font = "bold 80px honey";
@@ -119,6 +119,6 @@ function afficherScore(){
     ctx.fillText("Score : " + score.toString(),15,45);
     ctx.fillStyle = "gold"
     ctx.font = "bold 40px honey";
-    //ctx.fillText("High score : " + highscore.toString(),15,80);
+    ctx.fillText("High score : " + highscore.toString(),15,80);
     ctx.restore();
 }
